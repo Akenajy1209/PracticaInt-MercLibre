@@ -1,0 +1,233 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#header {   
+    background-color: #EAC926;
+}
+
+body {
+    background-color: #666;
+    ;
+}
+
+main {
+    width: 90%;
+    background-color: #ebebeb;
+    margin: auto;
+    text-align: center;
+}
+
+main section article {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    background-color: white;
+    margin: 10px;
+}
+
+article>div {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+main section article div>* {
+    margin: 0;
+}
+
+h2 {
+    margin: 10px;
+    color: #666;
+    text-align: left;
+}
+
+#banner {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 90%;
+}
+.logo{
+    display: inline-flex;
+    width: 48%;
+}
+.container-searchbar{
+    display: inline-flex;
+    width: 50%;
+}
+.searchbar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta cualquier contenido que desborde del contenedor */
+    justify-content: space-between;
+    background-color: white;
+    border: 2px solid #666;
+    border-radius: 5px;
+    color: #666;
+    font-size: 24px;
+}
+
+#button-search {
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #666;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.envio {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #39b54a;
+    right: 20px;
+    top: -15px;
+}
+
+#notice {
+    text-align: center;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.loginbar {
+    display: none;
+}
+
+.loginbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.loginbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.burger-menu {
+    width: 70px;
+    height: 60px;
+    background-color: #1259c3;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 7px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.precio {
+    display: inline-block;
+    width: 40%;
+    font-size: 18px;
+}
+
+.descuentos {
+    display: inline-block;
+    width:57%;
+    color: #39b54a;
+    font-size: 16px;
+}
+
+.descripciones {
+    display: none;
+    margin-top: 16px;
+    font-size: 16px;
+    text-align: left;
+}
+
+footer {
+    background-color: white;
+}
+
+.footer-section {
+    margin: 0px;
+    padding: 50px;
+}
+
+.footer-icono {
+    color: #1259c3;
+    text-align: center;
+    font-size: 50px;
+}
+
+footer>section>h3 {
+    margin: 0;
+    text-align: center;
+}
+
+footer>section>p {
+    margin: 0;
+    text-align: center;
+}
+
+@media (min-width: 361px) {
+
+    /*Tablets*/
+    .descripciones {
+        display: block;
+    }
+
+    main section article {
+        
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: calc(45% - 10px);
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .loginbar {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+
+    /*Desktop*/
+    .descripciones {
+        display: block;
+    }
+    main section article {
+        
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: calc(23% - 10px);
+    }
+}
